@@ -1,0 +1,23 @@
+CREATE TABLE MEMBERS (
+Id INTEGER NOT NULL AUTO_INCREMENT,
+name TEXT NOT NULL,
+age INTEGER NOT NULL,
+adress TEXT NOT NULL,
+PRIMARY KEY (Id)
+);
+
+-- insert
+INSERT INTO MEMBERS (name, age, adress)
+VALUES ('Ирина', 39, 'Moscow, Sovetskay 53-14');
+INSERT INTO MEMBERS (name, age, adress)
+VALUES ('Юлия', 25, 'SPB, Lenina 8-145');
+INSERT INTO MEMBERS (name, age, adress)
+VALUES ('Ксения', 10,'Samara, Tokarey 69-48');
+INSERT INTO MEMBERS (name, age, adress)
+VALUES ('Марина', 18, 'Sochi, Gogoly 98-1');
+INSERT INTO MEMBERS (name, age, adress)
+VALUES ('Степан', 61,'SVX, Pushkina 28-65');
+
+
+-- fetch
+SELECT * FROM MEMBERS WHERE age > 1;
